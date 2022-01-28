@@ -8,7 +8,7 @@ load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
 BASE_URL = os.getenv("BASE_URL")
-HELP_MSG = "Usage: weather.py [city | here | -h | --help]\n\tcity: city name\n\there: use current location\n\t-h: show this help"
+HELP_MSG = 'weather.py [city | here | -h | --help]\n\t\tcity: city name, either as a single word, or ""\n\t\there: use current location\n\t\t-h --help: show this help\n\n\twhen no arguments are passed to weather.py, the script will prompt the user to input a city\n'
 
 
 def kelvin_to_celsius(temp):
